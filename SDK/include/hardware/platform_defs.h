@@ -19,6 +19,7 @@
 
 #define NUM_CORES _u(2)
 #define NUM_DMA_CHANNELS _u(12)
+#define NUM_DMA_TIMERS _u(4)
 #define NUM_IRQS _u(32)
 #define NUM_PIOS _u(2)
 #define NUM_PIO_STATE_MACHINES _u(4)
@@ -27,7 +28,7 @@
 #define NUM_UARTS _u(2)
 #define NUM_I2CS _u(2)
 #define NUM_SPIS _u(2)
-
+#define NUM_TIMERS _u(4)
 #define NUM_ADC_CHANNELS _u(5)
 
 #define NUM_BANK0_GPIOS _u(30)
@@ -52,4 +53,3 @@
 #endif
 
 #endif
-
