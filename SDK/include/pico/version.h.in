@@ -2,9 +2,6 @@
  * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
  *
  * SPDX-License-Identifier: BSD-3-Clause
- * 
- * PlatformIO - wizio-pico
- * https://github.com/Wiz-IO
  */
 
 // ---------------------------------------
@@ -14,9 +11,9 @@
 #ifndef _PICO_VERSION_H
 #define _PICO_VERSION_H
 
-#define PICO_SDK_VERSION_MAJOR      1
-#define PICO_SDK_VERSION_MINOR      4
-#define PICO_SDK_VERSION_REVISION   0
-#define PICO_SDK_VERSION_STRING     "1.4.0.WizIO"
+#define PICO_SDK_VERSION_MAJOR    ${PICO_SDK_VERSION_MAJOR}
+#define PICO_SDK_VERSION_MINOR    ${PICO_SDK_VERSION_MINOR}
+#define PICO_SDK_VERSION_REVISION ${PICO_SDK_VERSION_REVISION}
+#define PICO_SDK_VERSION_STRING   "${PICO_SDK_VERSION_STRING}"
 
 #endif

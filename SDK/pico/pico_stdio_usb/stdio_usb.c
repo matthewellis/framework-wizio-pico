@@ -181,15 +181,3 @@ bool stdio_usb_init(void) {
 }
 #endif // !LIB_TINYUSB_HOST
 
-/* WizIO: wait terminal */
-///inline bool stdio_usb_connected(void) { return tud_cdc_connected(); } 
-
-/* WizIO: workaround reset */
-#if 0 == PICO_STDIO_USB_ENABLE_RESET_VIA_VENDOR_INTERFACE
-#include "pico/bootrom.h"
-void tud_cdc_line_coding_cb(uint8_t itf, cdc_line_coding_t const* p_line_coding) {
-    if (p_line_coding->bit_rate == 1200) {
-        reset_usb_boot(0, 0);
-    }
-}
-#endif // PICO_STDIO_USB_ENABLE_RESET_VIA_VENDOR_INTERFACE
